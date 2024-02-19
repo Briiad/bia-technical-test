@@ -1,9 +1,11 @@
-import React from 'react'
+import { Button, ButtonGroup } from "@chakra-ui/react";
 
 const index = () => {
   return (
-    <div>index</div>
-  )
-}
+    <>
+      <Button colorScheme="blue">Button</Button>
+    </>
+  );
+};
 
-export default index
+export default index;

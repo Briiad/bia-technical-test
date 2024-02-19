@@ -1,9 +1,7 @@
 import Homepage from "./pages/Home";
 import Landing from "./pages/Landing";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const router = createBrowserRouter([
   {
@@ -13,16 +11,17 @@ const router = createBrowserRouter([
   {
     path: "/homepage",
     element: <Homepage />,
-  }
+  },
 ]);
 
 function App() {
-
   return (
     <>
-      <RouterProvider router={router} />
+      <ChakraProvider>
+        <RouterProvider router={router} />
+      </ChakraProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
