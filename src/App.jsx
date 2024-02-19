@@ -1,4 +1,5 @@
-import Home from "./pages/Home"
+import Homepage from "./pages/Home";
+import Landing from "./pages/Landing";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -7,8 +8,12 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Landing />,
   },
+  {
+    path: "/homepage",
+    element: <Homepage />,
+  }
 ]);
 
 function App() {

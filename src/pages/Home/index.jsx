@@ -1,9 +1,13 @@
 import React from 'react'
+import Sidebar from '../../components/Sidebar'
+import './home.css'
 
-const index = () => {
+const Homepage = () => {
   return (
-    <div>index</div>
+    <section>
+      <Sidebar />
+    </section>
   )
 }
 
-export default index
+export default Homepage
